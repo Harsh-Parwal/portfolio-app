@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <img src="images/logoHarsh.png" class="logo" alt="Logo">
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="social-links">
+                <a href="https://www.github.com/Harsh-Parwal" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/YourUsername" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <div>
+                <div class="profile-image">
+                    <img src="images/profilePic.jpg" alt="Your Profile Picture">
+                </div>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+            
+            <div class="about-text">
+                <h1>Hi, I'm Harshvardhan S.Parwal</h1>
+                <p>A Computer Science and Engineering student at Graphic Era University, Dehradun.</p>
+                <br>
+                <p>
+                    Enthusiastic and self driven B.Tech Graduate with a solid foundation in <span>MERN Stack Web Development </span> and expertise in <span> C</span>, <span>C++</span>, and <span>Java</span>. Skilled in building responsive and scalable applications, and passionate about problem-solving and delivering efficient solutions.
+                </p>
+                <br>
+                <p>Eager to contribute to a dynamic development team with a commitment to continuous learning and professional growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Full Stack Developer Intern, TBI(Technology Business Incubator)</h3>
+            <p><strong>Duration:</strong> July 2024 - Oct 2024</p>
+            <p>Developed responsive web applications with a focus on user-centered design, enhancing interactivity and efficiency.
+            </p>
+            <ul style="margin-left: 25px; line-height: 35px;">
+                <li>
+                    Built reusable front-end components in React.js, boosting the modularity and responsiveness of applications.
+                </li>
+                <li>
+                    Implemented RESTful APIs with Node.js and Express.js to streamline server-client communication for seamless dataflow.
+                </li>
+                <li>
+                    Collaborated effectively within an agile team, gaining experience with professional workflows, version control, and sprint-based project management.
+                </li>
+                <li>
+                    Adapted to fast-paced project requirements, continuously updating skills and adopting new technologies as needed.
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="work">
+        <div class="container">
+            <h1 class="sub-title" style="text-align: center;">My Work</h1>
+            <div class="work-list" style="padding: 0 80px;">
+                <!-- Project 1 -->
+                <div>
+                    <div class="work">
+                        <img src="images/sharing-apps.jpg" alt="work1 image">
+                        <div class="layer">
+                            <ul>
+                                <li>Frontend developed using React for a seamless user interface.</li>
+                                <li>Signaling server with Node.js and Web Sockets for real-time communication.</li>
+                                <li>Peer-to-Peer connection using WebRTC and UDP for fast file transfer.</li>
+                                <li>File transfer speed: ~1 minute and 30 seconds for 1GB file.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>File Sharing Application</h3>
+                        <p>Tech Stack: Node.js, Express.js, Web Sockets, WebRTC, React</p>
+                        <a href="https://github.com/Harsh-Parwal/file-sharing-app" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Additional projects following the same structure as above -->
+                <div>
+                    <div class="work">
+                        <img src="images/todo.jpeg" alt="work1 image" height="335px">
+                        <div class="layer">
+                            <ul>
+                                <li>
+                                    Developed a productivity-focused to-do list application to help users organize, prioritize, and track tasks from creation tocompletion.
+                                </li>
+                                <li>
+                                    Implemented full CRUD functionality, allowing users to create, read, update, and delete tasks seamlessly via RESTfulAPIs.
+                                </li>
+                                <li>
+                                    Enhanced the front end using Bootstrap to ensure responsive design and an intuitive user experience.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>To-Do Application</h3>
+                        <p>Tech Stack: React, JavaScript(ES6+), HTML5/CSS3, Bootstrap, Node.js, Express.js, MongoDB</p>
+                        <a href="https://github.com/Harsh-Parwal/to-do-app" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="work">
+                        <img src="images/expense-apps.jpeg" alt="work1 image" height="335px">
+                        <div class="layer">
+                            <ul>
+                                <li> A full-stack application that enables users to manage their expenses and incomes effectively, offering a cleaninterface and visual insights for better financial planning.</li>
+                                <li>Integrated advanced filtering options to allow users to customize views by date, category, and more for tailored analysis.</li>
+                                <li>Leveraged Ant Design for a polished and user-friendly UI experience.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Expense Management System</h3>
+                        <p>Teck Stack: React, JavaScript(ES6+), HTML5/CSS3, Node.js, Express.js, MongoDB</p>
+                        <a href="https://github.com/Harsh-Parwal/expense-app-mern" target="_blank">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <a  href="https://github.com/Harsh-Parwal" target="_blank" class="btn">See More</a>
+        </div>
+    </div>
+    
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <ul>
+            <li style="padding: 0 16px;"><i class="fa-brands fa-java fa-2xl"></i></li>
+            <li style="padding: 0 16px;"><i class="fa-solid fa-c fa-2xl"></i>++</li>
+            <li style="padding: 0 16px;"><i class="fa-brands fa-html5 fa-2xl"></i></li>
+            <li style="padding: 0 16px;"><i class="fa-brands fa-js fa-2xl"></i></li>
+            <li style="padding: 0 16px;"><i class="fa-brands fa-react fa-2xl"></i></li>
+            <li style="padding: 0 16px;"><i class="fa-brands fa-node fa-2xl"></i></li>
+            <li style="padding: 0 16px;"><i class="fa-solid fa-database fa-2xl"></i></li>
+            <!-- <i class="fa-solid fa-coffee fa-2xl"> -->
+            <!-- Add more skills as needed -->
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact</h2>
+        <p>If you’d like to discuss a project or just want to say hi, feel free to reach out!</p>
+        <div class="contact-links">
+            <a href="mailto:harshparwal52@.com" style="color: #ff004f;"><i class="fas fa-envelope"></i>harshparwal52@gmail.com</a>
+        </div>
+        <h4>OR</h4>
+
+        <!-- Contact Form -->
+        <form action="your_form_processing_script.php" method="POST" class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" style="color: #ff004f; background-color: white;">Send Message</button>
+        </form>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Harshvardhan Singh Parwal. All rights reserved.</p> 
+        <div class="social-footer">
+            <a href="https://github.com/Harsh-Parwal" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/harshvardhan-singh-parwal" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

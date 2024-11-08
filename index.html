@@ -11,15 +11,20 @@
     <!-- Navbar -->
     <nav class="navbar">
         <div class="navbar-container">
-            <img src="images/logoHarsh.png" class="logo" alt="Logo">
+            <div class="logo" onclick="toggleSidebar()">
+                <img src="images/logoHarsh.png" class="logo" alt="Logo">
+            </div>        
+            <div id="sidebar" class="sidebar">
+                <div class="close-btn" onclick="toggleSidebar()">×</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
 
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#work">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
             <div class="social-links">
                 <a href="https://www.github.com/Harsh-Parwal" target="_blank"><i class="fab fa-github"></i></a>
                 <a href="https://linkedin.com/in/YourUsername" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -200,5 +205,12 @@
             <a href="https://linkedin.com/in/harshvardhan-singh-parwal" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById("sidebar");
+            sidebar.classList.toggle("open");
+        }
+    </script>
 </body>
 </html>

@@ -356,3 +356,254 @@ footer {
     margin: 0 0.5rem;
     text-decoration: none;
 }
+
+
+/* Hide sidebar on large screens */
+.sidebar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    /* Logo to act as the sidebar toggle button */
+    .logo {
+        cursor: pointer;
+    }
+
+    /* Sidebar Styles */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Initially hidden off-screen */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding-top: 2rem;
+        transition: left 0.3s ease; /* Slide-in effect */
+        z-index: 1000;
+    }
+
+    /* Sidebar open state */
+    .sidebar.open {
+        left: 0;
+    }
+
+    /* Close button */
+    .close-btn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Nav Links in Sidebar */
+    .sidebar .nav-links {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 2rem;
+    }
+
+    .sidebar .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .sidebar .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Mobile Responsive Styles */
+
+/* Navbar Responsive */
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .social-links {
+        margin-top: 1rem;
+    }
+}
+
+/* Home Section */
+@media (max-width: 768px) {
+    .home-section {
+        padding: 2rem 1rem;
+    }
+    
+    .home-content {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+/* Experience Section */
+@media (max-width: 768px) {
+    .experience-section {
+        padding: 1rem 2%;
+    }
+}
+
+/* Projects Section */
+@media (max-width: 768px) {
+    .work-list {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+}
+
+/* Skills Section */
+@media (max-width: 768px) {
+    .skills-section ul {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+}
+
+/* Contact Section */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 2rem 1rem;
+    }
+
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    footer {
+        padding: 1rem;
+    }
+    
+    .social-footer a {
+        margin: 0 0.3rem;
+    }
+}
+
+/* General navbar styles */
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Logo to act as the sidebar toggle button on mobile */
+.logo {
+    cursor: pointer;
+}
+
+/* Sidebar by default is hidden off-screen for mobile */
+.sidebar {
+    display: none;
+}
+
+/* Sidebar navigation links displayed as inline on larger screens */
+@media (min-width: 769px) {
+    /* Show nav links inline on larger screens */
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 0;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    /* Remove the close button on larger screens */
+    .close-btn {
+        display: none;
+    }
+
+    /* Style the nav links for inline layout */
+    .sidebar .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .sidebar .nav-links li {
+        margin: 0;
+    }
+
+    .sidebar .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+/* Sidebar navigation styles for mobile screens */
+@media (max-width: 768px) {
+    /* Initially hide sidebar off-screen */
+    .sidebar {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -250px; /* Start hidden off-screen */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding-top: 2rem;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    /* Sidebar open state on mobile */
+    .sidebar.open {
+        left: 0;
+    }
+
+    /* Show close button for sidebar */
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    /* Mobile nav link styles */
+    .sidebar .nav-links {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .sidebar .nav-links li {
+        margin: 1rem 0;
+    }
+
+    .sidebar .nav-links li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+}
+
